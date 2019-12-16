@@ -36,7 +36,7 @@ class BooksController < ApplicationController
   get '/books/:id' do
     if logged_in?
       @book = Book.find_by_id(params[:id])
-      erb :'books/show_tweet'
+      erb :'books/show_book'
     else
       redirect to '/login'
     end
