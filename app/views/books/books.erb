@@ -3,6 +3,6 @@
 
 <% @books.each do |book| %>
   <div>
-    <%= book.title %>
+    <%= book.title %> <p>This book belongs to: <%= book.user.username %> </p>
   </div>
 <% end %>
